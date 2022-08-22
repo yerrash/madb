@@ -22,5 +22,5 @@ urlpatterns = [
     # path("api/", include("products.urls")),
     # path("api/", include("equipments.urls")),
     # path("api/", include("contacts.urls")),
-    # path("api/", include("companies.urls")),
+    path("api/", include("companies.urls")),
 ]
