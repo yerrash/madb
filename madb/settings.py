@@ -51,9 +51,9 @@ THIRD_PARTY_APPS = [
 
 PROJECT_APPS = [
     "companies",
-    # "contacts",
-    # "equipments",
-    # "products",
+    "contacts",
+    "equipments",
+    "products",
     "users",
 ]
 
@@ -162,5 +162,15 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = "users.User"
+
+REST_FRAMEWORK = {
+    # "DATE_FORMAT": "%d/%m/%Y",
+    # "DATE_INPUT_FORMATS": ["%d/%m/%Y"],
+    # "DATETIME_FORMAT": "%d/%m/%Y %H:%M:%S",
+    # "DATETIME_INPUT_FORMATS": ["%d/%m/%Y %H:%M:%S"],
+    "DEFAULT_PAGINATION_CLASS": ("rest_framework.pagination.PageNumberPagination"),
+    "PAGE_SIZE": 20,
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
 
 django_on_heroku.settings(locals())

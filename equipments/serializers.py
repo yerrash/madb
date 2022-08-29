@@ -1,10 +1,10 @@
 from rest_framework import serializers
 
-from .models import Contact
+from .models import Equipment
 
 
-class ContactSerializer(serializers.ModelSerializer):
+class EquipmentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Contact
+        model = Equipment
         fields = "__all__"
         read_only_fields = ["id"]
