@@ -30,9 +30,9 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 CSRF_TRUSTED_ORIGINS = ["https://tccmadb.herokuapp.com"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
